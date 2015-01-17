@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".ListernActivity"
+    android:id="@+id/mainlayout">
+
+    <TextView android:text="@string/start_listening" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listen" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Listening"
+        android:id="@+id/bullshitbutton"
+        android:layout_below="@+id/listen"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="false"
+        android:onClick="bullshitClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Not Listening"
+        android:id="@+id/statusText"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/send"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Results"
+        android:id="@+id/results"
+        android:layout_below="@+id/statusText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Force Send"
+        android:id="@+id/send"
+        android:layout_below="@+id/bullshitbutton"
+        android:layout_alignParentStart="true"
+        android:onClick="forceSend"
+        android:nestedScrollingEnabled="true" />
+
+</RelativeLayout>
