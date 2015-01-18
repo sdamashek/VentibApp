@@ -202,7 +202,7 @@ public class ListernActivity extends ActionBarActivity implements
 
     public void forceSend(View view){
         HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost("http://shrekislove.ngrok.com/420/blazeit/");
+        HttpPost httppost = new HttpPost("http://pennappsxi.fwilson.me/api/submitSpeech/");
         updateStatus("Submitting data...");
         new SubmitDataTask().execute(httppost, httpclient, Integer.valueOf(2));
     }
@@ -316,7 +316,7 @@ public class ListernActivity extends ActionBarActivity implements
         messages.add(text);
         if(messageCount % 5 == 0){
             HttpClient httpclient = new DefaultHttpClient();
-            HttpPost httppost = new HttpPost("http://shrekislove.ngrok.com/420/blazeit/");
+            HttpPost httppost = new HttpPost("http://pennappsxi.fwilson.me/api/submitSpeech/");
             updateStatus("Submitting data...");
             new SubmitDataTask().execute(httppost, httpclient, Integer.valueOf(2));
         }
